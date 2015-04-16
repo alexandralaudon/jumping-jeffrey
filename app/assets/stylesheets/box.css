@@ -1,0 +1,94 @@
+h1 {
+  font-family:helvetica neue,helvetica,arial,sans-serif;
+  font-size:35px;
+  font-weight:200;
+  color:#a9a9a9;
+  margin:50px auto 20px auto;
+}
+
+h5 {
+  font-family:helvetica neue,helvetica,arial,sans-serif;
+  font-size:15px;
+  font-weight:200;
+  color:#a9a9a9;
+}
+
+body {
+	background-color: #ecf0f1;
+	font-family: Arial, Tahoma;
+	font-size: 15px;
+	text-align: center;
+}
+
+.col_third {
+  width: 27%;
+	position: relative;
+	display:inline;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+
+/* Boxes Styling*/
+.box1{
+  background-size: cover;
+  background-position: 0px;
+  color: white;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.box2 {
+	background-color: #14bcc8;
+  color: white;
+	width: 200px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+
+/* Flip Panel */
+.wrapper{ width: 980px; margin: 0 auto;  background-color: #bdd3de; hoverflow: hidden;}
+
+.panel {
+	margin: 0 auto;
+	height: 130px;
+	position: relative;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+}
+.panel .front, .panel .back {
+	text-align: center;
+}
+.panel .front {
+	position: absolute;
+	top: 0;
+	z-index: 900;
+	text-align: center;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all .8s ease-in-out;
+}
+.panel .back {
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all .8s ease-in-out;
+}
+.panel.flip .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+}
+.panel.flip .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+}
