@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('.hover').hover(function(){
+  $('.panel').hover(function(){
     $(this).addClass('flip');
   },function(){
     $(this).removeClass('flip');

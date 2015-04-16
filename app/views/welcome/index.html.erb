@@ -3,20 +3,17 @@
 
 <br>
 
-<% @users.each do |user| %>
-
   <div class="wrapper">
 
-  		<div class="col_third hover panel">
-          <div class="front box1">
-            <p><%= user.name %></p>
-          </div>
-          <div class="back box2">
-            <p><%= user.note %></p>
-          </div>
+    <% @users.each do |user| %>
+  		<div class="col_third panel">
+        <div class="front box1">
+          <p><%= user.name %></p>
         </div>
-  	 </div>
+        <div class="back box2">
+          <p><%= user.note %></p>
+        </div>
+      </div>
+   <% end %>
 
   </div>
-
-<% end %>
