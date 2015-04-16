@@ -26,6 +26,10 @@
 
   p { color: #ffffff; }
 
+  .black-text {
+    color: black;
+  }
+
 
 /* Column Grids */
   .col_third {

@@ -1,17 +1,17 @@
 <%= form_for @user, url: add_message_path do |f| %>
 
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
+    <p class="black-text">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
 
-  <p>
-    <%= f.label :note %>
-    <%= f.text_area :note %>
-  </p>
+    <p class="black-text">
+      <%= f.label :note %>
+      <%= f.text_area :note %>
+    </p>
 
-  <p>
-    <%= f.submit 'Create Message for Jeffery' %>
-  </p>
+    <p class="black-text">
+      <%= f.submit 'Create Message for Jeffery' %>
+    </p>
 
 <% end %>
